@@ -25,7 +25,7 @@ function App() {
           console.log(item);
         }}
       />
-      <Button type={ButtonTypes.secondary} />
+      <Button buttonType={ButtonTypes.secondary}>My Button</Button>
     </div>
   );
 }
