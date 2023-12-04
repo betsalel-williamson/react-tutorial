@@ -10,10 +10,10 @@ export default function Button({
   buttonType = ButtonTypes.primary,
   children,
 }: ButtonProps) {
-  const className = "btn btn-" + buttonType;
+  const className = "btn btn-" + ButtonTypes[buttonType];
   return (
     <button type="button" className={className}>
-      {children}
+      {children} {ButtonTypes[buttonType]} {buttonType}
     </button>
   );
 }
