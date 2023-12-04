@@ -2,7 +2,7 @@
  *
  * @returns Simple hello world message
  */
-function Message() {
+export default function Message() {
   const name = false; // "Saul";
 
   if (name) {
@@ -11,5 +11,3 @@ function Message() {
 
   return <h1>Hello others</h1>;
 }
-
-export default Message;

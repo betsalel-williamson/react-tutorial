@@ -10,8 +10,8 @@ describe("Message tests", () => {
 
   test("Text should be h1", () => {
     const component = render(<Message />);
-    const header = component.getByText("Hello others");
-
-    expect(header.tagName).toBe("H1");
+    const header = component.getAllByRole("heading");
+    expect(header.length).toBe(1);
+    expect(header[0].tagName).toBe("H1");
   });
 });
