@@ -1,9 +1,13 @@
+export interface MessageProps {
+  name?: string;
+}
+
 /**
  *
  * @returns Simple hello world message
  */
-export default function Message() {
-  const name = false; // "Saul";
+export default function Message({ name = "" }: MessageProps) {
+  name = name.trim();
 
   if (name) {
     return <h1>Hello {name}</h1>;

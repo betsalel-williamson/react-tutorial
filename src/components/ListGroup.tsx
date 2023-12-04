@@ -16,6 +16,7 @@ export default function ListGroup({
   heading,
   onSelectedItem,
 }: ListGroupProps) {
+  // default state is out-of-bounds index
   const [selectedIndex, setSelectedIndex] = useState(-1);
 
   return (
@@ -26,11 +27,9 @@ export default function ListGroup({
         {items.map((item, index) => (
           <li
             key={item.id}
-            className={
-              selectedIndex === index
-                ? "list-group-item active"
-                : "list-group-item"
-            }
+            className={["list-group-item", selectedIndex === index && "active"]
+              .filter(Boolean)
+              .join(" ")}
             onClick={() => {
               setSelectedIndex(index);
               onSelectedItem(item);
