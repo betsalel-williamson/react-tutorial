@@ -26,3 +26,6 @@ dist-ssr
 # vitest directories and files
 .vite/*
 coverage/*
+
+# husky
+.husky/*
