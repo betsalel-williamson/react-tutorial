@@ -1,12 +1,26 @@
 # React + TypeScript + Vite
 
-Part of this project follow the tutorial on <https://www.youtube.com/watch?v=SqcY0GlETPk>.  It is augmented to include unit testing and GitHub Actions for continuous integration.
+Part of this project follows the tutorial on <https://www.youtube.com/watch?v=SqcY0GlETPk>.  The project also includes additional work to show unit testing and uses GitHub Actions for continuous integration.
+
+## Overview
+
+This is a tutorial for single client side react app built with vite.
+
+### Project Structure
+
+#### Package Manager
+
+The Nodejs Package Manager (npm) is used to manage the production and development dependencies.  See <https://www.npmjs.com/> for more details on npm.
+
+#### Build System
+
+The Vite build tool helps to package the source code and package it for a production release.  It is also used to help with development and testing.  See <https://vitejs.dev/guide/> for more details on Vite.
 
 ## Setup
 
-In browser install [React Developer Tools](https://react.dev/learn/react-developer-tools)
+Install [React Developer Tools](https://react.dev/learn/react-developer-tools).
 
-Install nodejs > 20.x <https://nodejs.org/en>
+Install nodejs > 20.x <https://nodejs.org/en>.
 
 Install modules, build, and test:
 
