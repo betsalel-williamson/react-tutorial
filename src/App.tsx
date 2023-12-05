@@ -5,7 +5,7 @@ import ListGroup, { MyListItem } from "./components/ListGroup";
 
 /**
  *
- * @returns Simple page
+ * @returns Simple page with a list and button.
  */
 function App() {
   const myItems: MyListItem[] = [
