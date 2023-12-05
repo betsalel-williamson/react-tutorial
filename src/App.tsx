@@ -7,7 +7,7 @@ import ListGroup, { MyListItem } from "./components/ListGroup";
  *
  * @returns Simple page with a list and button.
  */
-function App() {
+export default function App() {
   const myItems: MyListItem[] = [
     { id: 1, content: "one" },
     { id: 2, content: "two" },
@@ -29,5 +29,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
